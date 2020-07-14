@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-
 import { Link } from "react-router-dom";
+import classnames from "classnames";
 
 const nodes = {
   a: ({ to, children, type, ...props }) => (
@@ -11,22 +11,6 @@ const nodes = {
   ),
   b: ({ to, type = "button", ...props }) => <button type={type} {...props} />,
   link: ({ type, ...props }) => <Link {...props} />,
-};
-
-const buildClass = ({
-  color = "primary",
-  variant,
-  raised = false,
-  fullwidth = false,
-}) => {
-  if (variant === "link") {
-    return "usa-button--unstyled";
-  }
-  return `usa-button--${color}${variant ? `-${variant}` : ""} ${
-    raised ? "usa-button--raised" : ""
-  } ${fullwidth ? "usa-button--fullwidth" : ""} ${
-    variant === "media" ? "usa-button--unstyled" : ""
-  }`;
 };
 
 export const Button = ({
@@ -43,19 +27,20 @@ export const Button = ({
   type,
   ...props
 }) => {
-  const varClass = buildClass({ variant, color, raised, fullwidth });
+  const classes = classnames({
+    "use-button": true,
+    [`usa-button--${color}`]: color,
+    [`usa-button--${color}-${variant}`]: variant,
+    "usa-button--fullwidth": fullwidth,
+    "usa-button--raised": raised,
+    [className]: className,
+  });
+
   const url = typeof to === "string" ? to : "";
-  const isExternal = external || url.includes("://");
   const Node =
-    onClick || type ? nodes["b"] : isExternal ? nodes["a"] : nodes["link"];
+    onClick || type ? nodes["b"] : external ? nodes["a"] : nodes["link"];
   return (
-    <Node
-      to={url}
-      type={type}
-      onClick={onClick}
-      {...props}
-      className={`usa-button ${varClass} ${className ? className : ""}`}
-    >
+    <Node to={url} type={type} onClick={onClick} {...props} className={classes}>
       {children}
     </Node>
   );
