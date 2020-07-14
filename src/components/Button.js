@@ -28,7 +28,7 @@ export const Button = ({
   ...props
 }) => {
   const classes = classnames({
-    "use-button": true,
+    "usa-button": true,
     [`usa-button--${color}`]: color,
     [`usa-button--${color}-${variant}`]: variant,
     "usa-button--fullwidth": fullwidth,
