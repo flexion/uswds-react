@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/uswds-react/static/css/main.c5dadb72.chunk.css",
+    "main.js": "/uswds-react/static/js/main.65a249f1.chunk.js",
+    "main.js.map": "/uswds-react/static/js/main.65a249f1.chunk.js.map",
+    "runtime-main.js": "/uswds-react/static/js/runtime-main.81c4f32c.js",
+    "runtime-main.js.map": "/uswds-react/static/js/runtime-main.81c4f32c.js.map",
+    "static/js/2.ea9da3e3.chunk.js": "/uswds-react/static/js/2.ea9da3e3.chunk.js",
+    "static/js/2.ea9da3e3.chunk.js.map": "/uswds-react/static/js/2.ea9da3e3.chunk.js.map",
+    "index.html": "/uswds-react/index.html",
+    "precache-manifest.77ad3b3add2f60b744d1795c3243766a.js": "/uswds-react/precache-manifest.77ad3b3add2f60b744d1795c3243766a.js",
+    "service-worker.js": "/uswds-react/service-worker.js",
+    "static/css/main.c5dadb72.chunk.css.map": "/uswds-react/static/css/main.c5dadb72.chunk.css.map",
+    "static/js/2.ea9da3e3.chunk.js.LICENSE.txt": "/uswds-react/static/js/2.ea9da3e3.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/uswds-react/static/media/youtube15.9d356b3b.svg",
+    "static/media/logo.svg": "/uswds-react/static/media/logo.5047b988.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.81c4f32c.js",
+    "static/js/2.ea9da3e3.chunk.js",
+    "static/css/main.c5dadb72.chunk.css",
+    "static/js/main.65a249f1.chunk.js"
+  ]
+}
