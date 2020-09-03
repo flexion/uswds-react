@@ -76,11 +76,13 @@ export function Counter() {
                   {pending ? (
                     <span>
                       <Fa
-                        className="margin-right-1 display-inline-block"
+                        className="display-inline-block position-absolute"
                         icon="spinner"
                         spin
-                      />{" "}
-                      {"Pending..."}
+                      />
+                      <span className="margin-left-3 display-inline-block">
+                        Pending...
+                      </span>
                     </span>
                   ) : (
                     "Add Async"
