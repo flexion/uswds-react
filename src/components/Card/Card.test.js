@@ -1,12 +1,12 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { shallow } from "enzyme";
 import Card from "components/Card";
 
 describe("<Card />", () => {
   describe("default render", () => {
     it("should render", () => {
-      const { getByText } = render(<Card title="Test" />);
-      expect(getByText("Test")).toBeTruthy();
+      const wrapper = shallow(<Card title="Test" />);
+      expect(wrapper.find(".usa-card")).toBeTruthy();
     });
   });
 });
