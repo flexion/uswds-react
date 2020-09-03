@@ -27,8 +27,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build"
+    "test:coverage": "npm test -- --coverage --watchAll=false"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -45,7 +44,24 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "gh-pages": "^3.1.0"
+  "jest": {
+    "collectCoverageFrom": [
+      "src/components/**/*.js",
+      "src/app/**/*.js",
+      "src/features/**/*.js",
+      "src/routes/**/*.js",
+      "!src/app/index.js",
+      "!src/**/context.js",
+      "!src/test/**/*.js",
+      "!src/routes/index.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    }
   }
 }

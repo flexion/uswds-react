@@ -7,16 +7,19 @@ import { far } from "@fortawesome/free-regular-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 
 import "./index.css";
-import App from "./App";
-import store from "./app/store";
+import Routes from "./routes";
+import store from "./app";
 import * as serviceWorker from "./serviceWorker";
+import Primary from "templates/Primary";
 
 library.add(far, fas);
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Provider store={store}>
-        <App />
+        <Primary>
+          <Routes />
+        </Primary>
       </Provider>
     </Router>
   </React.StrictMode>,

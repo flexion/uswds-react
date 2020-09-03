@@ -10,12 +10,14 @@ export const incrementAsync = createAsyncThunk(
   }
 );
 
+export const initialState = {
+  loading: false,
+  value: 0,
+};
+
 export const counterSlice = createSlice({
   name: "counter",
-  initialState: {
-    loading: false,
-    value: 0,
-  },
+  initialState,
   reducers: {
     increment: (state) => {
       // Redux Toolkit allows us to write "mutating" logic in reducers. It

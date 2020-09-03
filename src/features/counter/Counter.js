@@ -10,7 +10,7 @@ import {
   incrementAsync,
   selectCount,
   pendingCount,
-} from "./counterSlice";
+} from "../../app/CounterModule";
 import "./Counter.scss";
 
 export function Counter() {
