@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/uswds-react/module-test-example/static/css/main.d090dde3.chunk.css",
+    "main.js": "/uswds-react/module-test-example/static/js/main.fe9c0138.chunk.js",
+    "main.js.map": "/uswds-react/module-test-example/static/js/main.fe9c0138.chunk.js.map",
+    "runtime-main.js": "/uswds-react/module-test-example/static/js/runtime-main.96a971e6.js",
+    "runtime-main.js.map": "/uswds-react/module-test-example/static/js/runtime-main.96a971e6.js.map",
+    "static/js/2.a5c7dbed.chunk.js": "/uswds-react/module-test-example/static/js/2.a5c7dbed.chunk.js",
+    "static/js/2.a5c7dbed.chunk.js.map": "/uswds-react/module-test-example/static/js/2.a5c7dbed.chunk.js.map",
+    "index.html": "/uswds-react/module-test-example/index.html",
+    "precache-manifest.1a11a6c17c768495c9653c39a3493917.js": "/uswds-react/module-test-example/precache-manifest.1a11a6c17c768495c9653c39a3493917.js",
+    "service-worker.js": "/uswds-react/module-test-example/service-worker.js",
+    "static/css/main.d090dde3.chunk.css.map": "/uswds-react/module-test-example/static/css/main.d090dde3.chunk.css.map",
+    "static/js/2.a5c7dbed.chunk.js.LICENSE.txt": "/uswds-react/module-test-example/static/js/2.a5c7dbed.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/uswds-react/module-test-example/static/media/youtube15.9d356b3b.svg",
+    "static/media/logo.svg": "/uswds-react/module-test-example/static/media/logo.5047b988.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.96a971e6.js",
+    "static/js/2.a5c7dbed.chunk.js",
+    "static/css/main.d090dde3.chunk.css",
+    "static/js/main.fe9c0138.chunk.js"
+  ]
+}
