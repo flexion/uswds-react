@@ -36,8 +36,8 @@ describe("SwapiModule", () => {
       const data = store.getState();
       expect(data.currentFilm.data.title).toBe("A New Hope");
     });
-    it("should load an error", async () => {
-      await store.dispatch(getCurrentFilm({ id: "error" }));
+    it("should load an error when no id is passed", async () => {
+      await store.dispatch(getCurrentFilm());
       const data = store.getState();
       expect(data.currentFilm.error.message).toBe("Invalid Id");
     });

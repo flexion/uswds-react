@@ -1,9 +1,7 @@
 import app from "./index.js";
-import { initialState as counter } from "app/CounterModule";
 import { initialState as swapi } from "app/SwapiModule";
 
 const combinedState = {
-  counter,
   swapi,
 };
 

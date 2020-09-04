@@ -1,7 +1,6 @@
 import React from "react";
 import logo from "./logo.svg";
 import { Grid, Row, Col } from "components/Grid";
-import { Counter } from "features/counter/Counter";
 
 const Default = () => {
   return (
@@ -14,9 +13,7 @@ const Default = () => {
         </Col>
       </Row>
       <Row>
-        <Col size={12}>
-          <Counter />
-        </Col>
+        <Col size={12}></Col>
       </Row>
     </Grid>
   );

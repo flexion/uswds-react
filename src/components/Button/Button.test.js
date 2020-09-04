@@ -1,5 +1,5 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { shallow, render } from "enzyme";
 import Button from "components/Button";
 import Provider from "test/TestProvider";
 
@@ -8,10 +8,37 @@ describe("<Button />", () => {
     it("should render", () => {
       const wrapper = shallow(
         <Provider>
-          <Button>Test</Button>
+          <Button url="http://google.com">Test</Button>
         </Provider>
       );
       expect(wrapper.find(".usa-button")).toBeTruthy();
     });
+  });
+
+  it("should render <a>", async () => {
+    const wrapper = render(
+      <Provider>
+        <Button url="http://google.com">Test</Button>
+      </Provider>
+    );
+    expect(wrapper.find("a")).toBeTruthy();
+  });
+
+  it("should render <button>", async () => {
+    const wrapper = render(
+      <Provider>
+        <Button onClick={() => null}>Test</Button>
+      </Provider>
+    );
+    expect(wrapper.find("button")).toBeTruthy();
+  });
+
+  it("should render <Link>", async () => {
+    const wrapper = render(
+      <Provider>
+        <Button url="/test">Test</Button>
+      </Provider>
+    );
+    expect(wrapper.find("a")).toBeTruthy();
   });
 });
