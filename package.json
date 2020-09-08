@@ -20,15 +20,14 @@
     "react-helmet": "^6.1.0",
     "react-redux": "^7.1.3",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "^3.4.3",
     "uswds": "^2.8.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build"
+    "test:coverage": "npm test -- --coverage --watchAll=false"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -45,7 +44,27 @@
       "last 1 safari version"
     ]
   },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/components/**/*.js",
+      "src/app/**/*.js",
+      "src/features/**/*.js",
+      "src/routes/**/*.js",
+      "!src/app/index.js",
+      "!src/**/context.js",
+      "!src/test/**/*.js",
+      "!src/routes/index.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    }
+  },
   "devDependencies": {
-    "gh-pages": "^3.1.0"
+    "enzyme-adapter-react-16": "^1.15.4"
   }
 }
