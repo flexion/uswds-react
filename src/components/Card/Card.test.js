@@ -9,8 +9,11 @@ describe("<Card />", () => {
       expect(wrapper.find(".usa-card")).toBeTruthy();
     });
     it("should alert invalid variant", () => {
+      global.console = { warn: jest.fn(), error: jest.fn() };
       const wrapper = shallow(<Card title="Test" variant="test" />);
       expect(wrapper.find(".usa-card")).toBeTruthy();
+      expect(console.warn).toBeCalled();
+      expect(console.error).toBeCalled();
     });
   });
   describe("props", () => {

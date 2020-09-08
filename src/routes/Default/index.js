@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import { Grid, Row, Col } from "components/Grid";
+import SWFilms from "features/SWFilms";
 
 const Default = () => {
   return (
@@ -13,7 +14,9 @@ const Default = () => {
         </Col>
       </Row>
       <Row>
-        <Col size={12}></Col>
+        <Col size={12}>
+          <SWFilms />
+        </Col>
       </Row>
     </Grid>
   );
