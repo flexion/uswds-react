@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/uswds-react/dependabot/npm_and_yarn/http-proxy-1.18.1/static/css/main.cea2d3ca.chunk.css",
+    "main.js": "/uswds-react/dependabot/npm_and_yarn/http-proxy-1.18.1/static/js/main.a40aaf6f.chunk.js",
+    "main.js.map": "/uswds-react/dependabot/npm_and_yarn/http-proxy-1.18.1/static/js/main.a40aaf6f.chunk.js.map",
+    "runtime-main.js": "/uswds-react/dependabot/npm_and_yarn/http-proxy-1.18.1/static/js/runtime-main.65f177be.js",
+    "runtime-main.js.map": "/uswds-react/dependabot/npm_and_yarn/http-proxy-1.18.1/static/js/runtime-main.65f177be.js.map",
+    "static/js/2.a5c7dbed.chunk.js": "/uswds-react/dependabot/npm_and_yarn/http-proxy-1.18.1/static/js/2.a5c7dbed.chunk.js",
+    "static/js/2.a5c7dbed.chunk.js.map": "/uswds-react/dependabot/npm_and_yarn/http-proxy-1.18.1/static/js/2.a5c7dbed.chunk.js.map",
+    "index.html": "/uswds-react/dependabot/npm_and_yarn/http-proxy-1.18.1/index.html",
+    "precache-manifest.c877f422b4313b3639d1b446fcabfd51.js": "/uswds-react/dependabot/npm_and_yarn/http-proxy-1.18.1/precache-manifest.c877f422b4313b3639d1b446fcabfd51.js",
+    "service-worker.js": "/uswds-react/dependabot/npm_and_yarn/http-proxy-1.18.1/service-worker.js",
+    "static/css/main.cea2d3ca.chunk.css.map": "/uswds-react/dependabot/npm_and_yarn/http-proxy-1.18.1/static/css/main.cea2d3ca.chunk.css.map",
+    "static/js/2.a5c7dbed.chunk.js.LICENSE.txt": "/uswds-react/dependabot/npm_and_yarn/http-proxy-1.18.1/static/js/2.a5c7dbed.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/uswds-react/dependabot/npm_and_yarn/http-proxy-1.18.1/static/media/youtube15.9d356b3b.svg",
+    "static/media/logo.svg": "/uswds-react/dependabot/npm_and_yarn/http-proxy-1.18.1/static/media/logo.5047b988.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.65f177be.js",
+    "static/js/2.a5c7dbed.chunk.js",
+    "static/css/main.cea2d3ca.chunk.css",
+    "static/js/main.a40aaf6f.chunk.js"
+  ]
+}
