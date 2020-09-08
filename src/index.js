@@ -5,8 +5,6 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { far } from "@fortawesome/free-regular-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
-
-import "./index.css";
 import Routes from "./routes";
 import store from "./app";
 import * as serviceWorker from "./serviceWorker";
