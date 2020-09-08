@@ -1,7 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
+import classnames from "classnames";
 
-const validVar = (variant) => ['horizontal', 'vertical'].includes(variant);
+const validVar = (variant) => ["horizontal", "vertical"].includes(variant);
 
 const Card = ({
   className,
@@ -14,7 +15,7 @@ const Card = ({
   variant: userVar,
   flat,
 }) => {
-  let trueVar = 'vertical';
+  let trueVar = "vertical";
   if (validVar(userVar)) {
     trueVar = userVar;
   } else {
@@ -23,11 +24,14 @@ const Card = ({
 
   return (
     <div
-      className={`usa-card ${
-        trueVar === 'horizontal' ? 'usa-card--flag' : ''
-      } ${!image ? 'usa-card--no-media' : ''} ${
-        !title && !meta && !excerpt ? 'usa-card--no-content' : ''
-      } ${flat ? 'usa-card--flat' : ''} ${className}`}
+      className={classnames({
+        "usa-card": true,
+        "usa-card--flag": trueVar === "horizontal",
+        "usa-card--no-media": !image,
+        "usa-card--no-content": !title && !meta && !excerpt,
+        "usa-card--flat": flat,
+        [className]: Boolean(className),
+      })}
     >
       <div className="usa-card__container">
         {(title || meta) && (
@@ -40,7 +44,7 @@ const Card = ({
           <div className="usa-card__media">
             <div className="usa-card__img">
               <div
-                className={`usa-card__img-container`}
+                className="usa-card__img-container"
                 style={{ backgroundImage: `url('${image}')` }}
               >
                 <img src={image} alt={imageAlt} />
@@ -56,8 +60,8 @@ const Card = ({
 };
 
 Card.defaultProps = {
-  variant: 'vertical',
-  imageAlt: '',
+  variant: "vertical",
+  imageAlt: "",
 };
 Card.propTypes = {
   /** classname to be applied to component */
@@ -75,7 +79,7 @@ Card.propTypes = {
   /** footer text or node */
   footer: PropTypes.node,
   /** render variant for card orientation */
-  variant: PropTypes.oneOf(['vertical', 'horizontal']),
+  variant: PropTypes.oneOf(["vertical", "horizontal"]),
   /** boolean to display card shadow */
   flat: PropTypes.bool,
 };
